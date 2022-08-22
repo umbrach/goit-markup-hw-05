@@ -63,6 +63,8 @@ img {
   text-decoration: none;
 
   color: #000000;
+
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .logo-blue {
@@ -78,7 +80,6 @@ img {
 .logo:focus,
 .logo:hover {
   color: var(--accent-color);
-  transition: 250ms;
 }
 
 .site-nav {
@@ -97,6 +98,8 @@ img {
   line-height: 1.2;
   letter-spacing: 0.02em;
   text-decoration: none;
+
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .site-nav .link.current {
@@ -106,7 +109,6 @@ img {
 .site-nav .link:hover,
 .site-nav .link:focus {
   color: var(--accent-color);
-  transition: 250ms;
 }
 
 .auth-nav {
@@ -126,10 +128,13 @@ img {
   letter-spacing: 0.02em;
 }
 
+.item .link {
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
 .item .link:hover,
 .item .link:focus {
   color: var(--accent-color);
-  transition: 250ms;
 }
 
 .auth-nav .item:not(:last-child) {
@@ -307,29 +312,24 @@ img {
   margin-left: 10px;
 }
 
-.network-link:focus .network-button {
-  color: var(--primary-white-color);
-  background-color: var(--accent-color);
-  transition: 250ms;
-}
-
 .network-button {
   display: flex;
   align-items: center;
   justify-content: center;
-
   width: 44px;
   height: 44px;
-
   border-radius: 50%;
 
   color: var(--icons-color);
+
+  transition-property: background-color, color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .network-button:hover {
   color: var(--primary-white-color);
   background-color: var(--accent-color);
-  transition: 250ms;
 }
 
 .network-icon {
@@ -361,14 +361,16 @@ img {
   padding: 16px 32px;
   border: 1px solid currentColor;
   border-radius: 4px;
+
   color: var(--icons-color);
+
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .clients-button:hover,
 .clients-button:focus {
   color: var(--accent-color);
   outline-color: var(--accent-color);
-  transition: 250ms;
 }
 
 .clients-svg {
@@ -399,6 +401,8 @@ img {
   text-decoration: none;
 
   color: var(--primary-white-color);
+
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .logo-accent {
@@ -409,13 +413,14 @@ img {
   text-decoration: none;
 
   color: var(--accent-color);
+
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .logo-secondary:hover,
 .logo-secondary:focus,
 .logo-accent:focus {
   color: var(--accent-color);
-  transition: 250ms;
 }
 
 .address {
@@ -425,12 +430,13 @@ img {
   font-style: normal;
 
   color: var(--primary-white-color);
+
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .address:hover,
 .address:focus {
   color: var(--accent-color);
-  transition: 250ms;
 }
 
 .footer-link .link {
@@ -441,12 +447,13 @@ img {
   line-height: 1.71;
   text-decoration: none;
   font-style: normal;
+
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer-link .link:hover,
 .footer-link .link:focus {
   color: var(--accent-color);
-  transition: 250ms;
 }
 
 .footer-network {
@@ -485,16 +492,16 @@ img {
 
   background: rgba(255, 255, 255, 0.1);
   color: var(--primary-white-color);
+
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer-network-button:hover {
   background-color: var(--accent-color);
-  transition: 250ms;
 }
 
 .network-link:focus .footer-network-button {
   background-color: var(--accent-color);
-  transition: 250ms;
 }
 
 /* Portfolio Page */
@@ -516,7 +523,6 @@ img {
 .filter-button button:focus {
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
-  transition: 250ms;
 }
 
 .button {
@@ -524,6 +530,10 @@ img {
   background-color: #f5f4fa;
   font-family: inherit;
   cursor: pointer;
+
+  transition-property: background-color, color, box-shadow;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .button.primary-hero {
@@ -546,6 +556,7 @@ img {
 
   color: var(--primary-white-color);
   background-color: var(--accent-color);
+
   font-weight: 500;
   font-size: 16px;
   line-height: 1.62;
@@ -585,7 +596,6 @@ img {
 .work-examples .card:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
-  transition: 250ms;
 }
 
 .work-examples .text {
@@ -611,6 +621,10 @@ img {
   width: 370px;
   margin-right: 30px;
   margin-bottom: 30px;
+
+  transition-property: box-shadow;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .card-description {
