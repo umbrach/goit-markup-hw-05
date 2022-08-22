@@ -78,6 +78,7 @@ img {
 .logo:focus,
 .logo:hover {
   color: var(--accent-color);
+  transition: 250ms;
 }
 
 .site-nav {
@@ -105,6 +106,7 @@ img {
 .site-nav .link:hover,
 .site-nav .link:focus {
   color: var(--accent-color);
+  transition: 250ms;
 }
 
 .auth-nav {
@@ -127,6 +129,7 @@ img {
 .item .link:hover,
 .item .link:focus {
   color: var(--accent-color);
+  transition: 250ms;
 }
 
 .auth-nav .item:not(:last-child) {
@@ -307,6 +310,7 @@ img {
 .network-link:focus .network-button {
   color: var(--primary-white-color);
   background-color: var(--accent-color);
+  transition: 250ms;
 }
 
 .network-button {
@@ -325,6 +329,7 @@ img {
 .network-button:hover {
   color: var(--primary-white-color);
   background-color: var(--accent-color);
+  transition: 250ms;
 }
 
 .network-icon {
@@ -363,6 +368,7 @@ img {
 .clients-button:focus {
   color: var(--accent-color);
   outline-color: var(--accent-color);
+  transition: 250ms;
 }
 
 .clients-svg {
@@ -409,6 +415,7 @@ img {
 .logo-secondary:focus,
 .logo-accent:focus {
   color: var(--accent-color);
+  transition: 250ms;
 }
 
 .address {
@@ -423,6 +430,7 @@ img {
 .address:hover,
 .address:focus {
   color: var(--accent-color);
+  transition: 250ms;
 }
 
 .footer-link .link {
@@ -438,6 +446,7 @@ img {
 .footer-link .link:hover,
 .footer-link .link:focus {
   color: var(--accent-color);
+  transition: 250ms;
 }
 
 .footer-network {
@@ -480,10 +489,12 @@ img {
 
 .footer-network-button:hover {
   background-color: var(--accent-color);
+  transition: 250ms;
 }
 
 .network-link:focus .footer-network-button {
   background-color: var(--accent-color);
+  transition: 250ms;
 }
 
 /* Portfolio Page */
@@ -505,6 +516,7 @@ img {
 .filter-button button:focus {
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
+  transition: 250ms;
 }
 
 .button {
@@ -573,6 +585,7 @@ img {
 .work-examples .card:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
+  transition: 250ms;
 }
 
 .work-examples .text {
