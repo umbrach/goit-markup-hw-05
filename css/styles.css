@@ -390,6 +390,11 @@ p {
   background-color: var(--accent-color);
 }
 
+.network-link:focus .network-button {
+  color: var(--primary-white-color);
+  background-color: var(--accent-color);
+}
+
 .network-icon {
   display: inline-flex;
   align-items: center;
